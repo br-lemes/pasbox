@@ -8,4 +8,5 @@ uses global
 {$ifdef CONFIG_PWD} , a_pwd {$endif}
 {$ifdef CONFIG_TRUE} , a_true {$endif}
 {$ifdef CONFIG_YES} , a_yes {$endif}
+{$ifdef CONFIG_WHICH} , a_which {$endif}
 ;

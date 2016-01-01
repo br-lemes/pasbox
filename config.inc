@@ -9,5 +9,6 @@
 {$DEFINE CONFIG_PWD}
 {$DEFINE CONFIG_TRUE}
 {$DEFINE CONFIG_YES}
+{$DEFINE CONFIG_WHICH}
 
 {$include reconfig.inc}
