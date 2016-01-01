@@ -12,7 +12,7 @@ uses crt {$ifdef DEBUG}, heaptrc {$endif};
 
 const
 	version = '0.1.1';
-	copying = 'PasBox ' + version + ' Copyright (C) 2015 Breno Ramalho Lemes';
+	copying = 'PasBox ' + version + ' Copyright (C) 2015-2016 Breno Ramalho Lemes';
 {$ifdef CONFIG_FEATURE_INSTALLER}
 	path: array [1..4] of string = ('bin/', 'sbin/', 'usr/bin/', 'usr/sbin/');
 	bin     = 1;
