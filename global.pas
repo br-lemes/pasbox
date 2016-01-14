@@ -5,9 +5,7 @@ unit global;
 interface
 
 {$ifdef CONFIG_FEATURE_USE_CRT}
-uses crt {$ifdef DEBUG}, heaptrc {$endif};
-{$else}
-{$ifdef DEBUG}uses heaptrc; {$endif}
+uses crt;
 {$endif}
 
 const
