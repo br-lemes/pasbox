@@ -12,9 +12,10 @@ begin
 	while (i > 0) and not (appletname[i] in ['/','\']) do
 		dec(i);
 	if copy(appletname, length(appletname) - 3, 1) = '.' then
-		appletname := copy(appletname, i + 1, length(appletname) - 4)
+		appletname := copy(appletname, i + 1, length(appletname) - i - 4)
 	else
 		appletname := copy(appletname, i + 1, maxint);
+	{$ifndef UNIX} appletname := lowercase(appletname); {$endif}
 	if (appletname = 'pasbox') and (paramcount >= 1) then
 	begin
 		paramstart := 2;
